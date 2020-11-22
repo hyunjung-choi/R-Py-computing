@@ -42,10 +42,10 @@ for page in pages:
             continue
 
 # 중복 링크 제거
-print(len(news_link)) # 838
+print(len(news_link)) # 793
 news_set = set(news_link)
 news_link = list(news_set)
-print(len(news_link))   # 402
+print(len(news_link))   # 407
 
 # 뉴스 제목과 본문 내용 크롤링 후, 텍스트 파일로 저장
 f = open("contents.txt", 'w', encoding='utf-8')

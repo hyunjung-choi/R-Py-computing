@@ -25,4 +25,4 @@ for article in articles:
         #print(e)
         continue
 
-print(len(news_link))   # 19
+print(len(news_link))
