@@ -10,7 +10,7 @@ housing_price = pd.read_csv("boston_csv.csv", na_values = missing_values)
 housing_price = housing_price.dropna()
 
 lm = LinearRegression()  # Create Linear Regression Object
-X = housing_price[['LSTAT']] # 하위계층 비율(LSTAT)이 독립변수
+X = housing_price[['LSTAT', 'TAX']] # 하위계층 비율(LSTAT)과 달러 당 재산세율(TAX)가 독립변수
 Y = housing_price['MEDV'] # 본인 소유의 주택가격인 MEDV가 종속변수
 
 # Training Set은 표본의 75%
